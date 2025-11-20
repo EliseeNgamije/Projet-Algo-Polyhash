@@ -1,0 +1,24 @@
+Pour travailler en local :
+
+git clone...
+...
+> git status   -> fichiers modifiés, déplacés ou supprimés : en rouge
+> git add [nom_fichier]
+> git status   -> fichiers modifiés, déplacés ou supprimés qui ont été add : en vert
+> git commit -m "Description du commit"
+> git status   -> fichiers modifiés, déplacés ou supprimés qui ont été commit : n'apparaissent plus
+> git push   -> vérifier en ligne si le push a bien fonctonné
+
+lorsque le terminal affiche :
+
+> Username ... :
+> Password ... :
+
+Pour Username, entrer votre nom d'utilisateur github (pas l'adresse mail), et pour le password entrer le token suivant :
+[à compléter]
+
+Pour générer un token :
+Sur Github, dans Settings -> Developer Settings -> Personal access tokens -> Fine-grained tokens -> Generate new token.
+Dans "Repository access", bien mettre "Only select repositories" et choisir le bon Repository.
+Dans "Permissions", cliquer sur "Add permissions", et bien mettre "Contents" en Acces:Read and write, sinon le push ne s'éffectuera pas.
+Ensuite générer le token, le copier (si la page est fermée ou rafraichie, le token disparaît et ne réapparaîtra plus) et le coller ci-dessus (à la place de [à compléter]).
